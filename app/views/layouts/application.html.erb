@@ -21,12 +21,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active"><%= link_to "About Us", about_us_url %></a>
-          <a class="nav-item nav-link"><%= link_to "Contacts", contacts_url %></a>
-          <a class="nav-item nav-link"><%= link_to "Trackings", trackings_url %></a>
+          <a class="nav-item nav-link active"><%= link_to "About Us", about_us_url, data: { turbolinks: false } %></a>
+          <a class="nav-item nav-link"><%= link_to "Contacts", contacts_url, data: { turbolinks: false }  %></a>
+          <a class="nav-item nav-link"><%= link_to "Trackings", trackings_url, data: { turbolinks: false }  %></a>
         </div>
       </div>
     </nav>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
