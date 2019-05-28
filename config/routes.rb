@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'home#index'
   resources :trackings, only: [:create, :new, :index]
   resources :contacts, only: [:create, :new]
   resources :about_us

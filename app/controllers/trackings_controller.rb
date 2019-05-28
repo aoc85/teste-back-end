@@ -2,7 +2,7 @@ class TrackingsController < ApplicationController
 
   def index
     @tracker = false
-    @trackings = Tracking.all
+    @trackings = Tracking.last(50).reverse
   end
 
   def create
