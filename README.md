@@ -1,26 +1,33 @@
 # README
 
 
-* Ruby version
+* Ruby version:
+
   2.5.1
 
-* Rails version
+* Rails version:
+
   5.2.3
 
-* System Dependencies
+* System Dependencies:
+
   Mysql/MariaDB
   bundle
 
-* Database creation
+* Database creation:
+
   rails db:create
 
-* Database initialization
+* Database initialization:
+
   rails db:migrate
 
-* How to run the test suite
+* How to run the test suite:
+
   rake test
 
-* Configuration
+* Configuration:
+
   bundle install
 
 In order to run the application, edit the file config/database.yml with the credentials of your database. Then, run the commands above and you'll be able to start the server running ```rails s``` command in your terminal.
